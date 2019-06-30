@@ -1,0 +1,68 @@
+.hero{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+
+  &__text-content{
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title{
+    margin-bottom: 0;
+
+    @mixin atMedium{
+      font-size: 3.125rem;
+    }
+
+    @mixin atLarge{
+      font-size: 4.375rem;
+    }
+
+    @mixin atExLarge{
+      font-size: 4.375rem;
+    }
+
+  }
+
+  &__title--number{
+    color: red;
+  }
+
+  &__description{
+    margin-top: 0.4375rem;
+
+
+    @mixin atLarge{
+      font-size: 1.5625rem;
+    }
+
+    @mixin atExLarge{
+      font-size: 1.5625rem;
+    }
+  }
+
+  &__image{
+    width: 90%;
+    margin-top: -0.75rem;
+
+    @mixin atSmall{
+      width: 70%;
+    }
+
+    @mixin atMedium{
+      width: 80%;
+    }
+
+    @mixin atExLarge{
+      width: 55%;
+    }
+
+  }
+
+}

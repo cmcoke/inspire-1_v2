@@ -1,0 +1,80 @@
+.remote{
+
+
+  &__content{
+
+    @mixin atMedium{
+      margin-top: 4.375rem;
+    }
+
+    @mixin atLarge{
+      margin-top: 6.875rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: 9.375rem;
+    }
+
+  }
+
+  &__content-2{
+
+    @mixin atMedium{
+      margin-left: 3.4375rem;
+    }
+
+    @mixin atLarge{
+      margin-left: 3.75rem;
+    }
+
+    @mixin atExLarge{
+      margin-left: 6.875rem;
+    }
+  }
+
+  &__text-content{
+    margin-top: -1.875rem;
+
+    @mixin atSmall{
+      margin-top: -3.75;
+    }
+
+    @mixin atExLarge{
+      margin-top: 3.125rem;
+    }
+  }
+
+  &__text-content-2{
+
+
+    @mixin atLarge{
+      margin-top: 4.375rem;
+    }
+
+
+    @mixin atExLarge{
+      margin-top: 5rem;
+    }
+  }
+
+  &__controller{
+
+
+    @mixin atMedium{
+      margin-top: 2.5rem;
+    }
+
+
+  }
+
+  &__lightbridge{
+
+    @mixin atMedium{
+      margin-top: 2.5rem;
+    }
+
+    @mixin atLarge{
+      margin-top: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.design{
+
+  &__diagram{
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  &__img-container{
+    position: relative;
+  }
+
+
+/* LINE IMAGES */
+  &--camera{
+    position: absolute;
+
+    @mixin atLarge{
+      right: 28%;
+      bottom: 5%;
+    }
+
+    @mixin atExLarge{
+      right:31%;
+      bottom:10%;
+    }
+
+    @mixin atExLarge2{
+      right:28%;
+      bottom: 18%;
+    }
+
+  }
+
+  &--led{
+    position: absolute;
+
+    @mixin atLarge{
+      right: 7%;
+      bottom:34%;
+    }
+
+    @mixin atExLarge{
+      right: 10%;
+      bottom: 40%;
+    }
+
+    @mixin atExLarge2{
+      right:5%;
+      bottom: 26%;
+    }
+  }
+
+  &--gps{
+    position: absolute;
+
+    @mixin atLarge{
+      right: 42.1%;
+      top: -1%;
+    }
+
+    @mixin atExLarge{
+      right: 43.3%;
+      top: 5%;
+    }
+
+    @mixin atExLarge2{
+      right: 42.1%;
+      top: -1%;
+    }
+  }
+
+  &--landing-gear{
+    position: absolute;
+
+    @mixin atLarge{
+      right: 73%;
+      top: 30%;
+    }
+
+    @mixin atExLarge{
+      right: 74%;
+      top: 35%;
+    }
+
+    @mixin atExLarge2{
+      right: 73%;
+      top: 30%;
+    }
+  }
+
+  &--motor{
+    position: absolute;
+
+    @mixin atLarge{
+      right: 75%;
+      top: 3%;
+    }
+
+    @mixin atExLarge{
+      right: 75%;
+      top: 8%;
+    }
+
+    @mixin atExLarge2{
+      right: 73%;
+      top: -2%;
+    }
+  }
+
+  &--propeller{
+    position: absolute;
+
+    @mixin atLarge{
+      right: 5%;
+      top: -1%;
+    }
+
+    @mixin atExLarge{
+      right: 12%;
+      top: 3%;
+    }
+
+    @mixin atExLarge2{
+      right: 10%;
+      top: -12%;
+    }
+  }
+
+
+/* DESIGN PARTS */
+  &--part-camera{
+    position: absolute;
+
+    @mixin atLarge{
+      left: 71%;
+      bottom: 24%;
+    }
+
+    @mixin atExLarge{
+      left: 69%;
+      bottom: 26%;
+    }
+  }
+
+
+  &--part-led{
+    position: absolute;
+
+    @mixin atLarge{
+      left: 93%;
+      bottom: 41%;
+    }
+
+    @mixin atExLarge{
+      left: 90%;
+      bottom: 46%;
+    }
+
+    @mixin atExLarge2{
+      left: 94%;
+      bottom: 43%;
+    }
+  }
+
+  &--part-gps{
+    position: absolute;
+
+    @mixin atLarge{
+      left: 47.7%;
+      bottom: 90%;
+    }
+
+    @mixin atExLarge{
+      left: 48.4%;
+      bottom: 87%;
+    }
+
+    @mixin atExLarge2{
+      left: 49%;
+      bottom: 92%;
+    }
+  }
+
+  &--part-landing-gear{
+    position: absolute;
+
+    @mixin atLarge{
+      left: -3%;
+      bottom: 40%;
+    }
+
+    @mixin atExLarge{
+      left: 1%;
+      bottom: 40.2%;
+    }
+
+    @mixin atExLarge2{
+      left: 2%;
+      bottom: 37.2%;
+    }
+  }
+
+  &--part-motor{
+    position: absolute;
+
+    @mixin atLarge{
+      left: 2%;
+      bottom: 78%;
+    }
+
+    @mixin atExLarge{
+      left: 6%;
+      bottom: 76.2%;
+    }
+
+    @mixin atExLarge2{
+      left: 7%;
+      bottom: 76.8%;
+    }
+  }
+
+  &--part-propeller{
+    position: absolute;
+
+    @mixin atLarge{
+      left: 93%;
+      bottom: 80%;
+    }
+
+    @mixin atExLarge{
+      left: 87%;
+      bottom: 80%;
+    }
+
+    @mixin atExLarge2{
+      left: 89%;
+      bottom: 84%;
+    }
+  }
+
+}

@@ -1,0 +1,56 @@
+.generic-content{
+
+  p{
+    line-height: 1.85;
+    margin: 0 0 1.8rem 0;
+  }
+
+  @mixin atSmall{
+    font-size: 1.125rem;
+  }
+
+  @mixin atExLarge{
+    font-size: 1.0625rem;
+  }
+
+  p a{
+    font-weight: 700;
+  }
+
+  &--camera{
+   color: #fff;
+  }
+
+  &--remote{
+    margin-top: 1.375rem;
+  }
+
+  &--price{
+    text-align: center;
+    margin-top: -1.125rem;
+    font-size: 0.875rem;
+  }
+
+  &--package{
+    text-align: center;
+
+    @mixin atMedium{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @mixin atLarge{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @mixin atExLarge{
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}

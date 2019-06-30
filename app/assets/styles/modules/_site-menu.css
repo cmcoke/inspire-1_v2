@@ -1,0 +1,109 @@
+  /* Mobile Menu */
+  nav {
+    @mixin atMobileMenu {
+      transition: transform ease-in 250ms;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+      }
+
+      li {
+        flex: 1 1 auto;
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+      }
+
+      a {
+        color: black;
+        text-transform: uppercase;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        transition: 240ms ease;
+        font-size: 12px;
+      }
+
+      a:hover {
+        background-color: rgba($blue2, .55);
+        color: #fff;
+      }
+
+      & li:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  /* Tablet/Desktop Menu */
+  @mixin atDesktopMenu {
+    .sidebar {
+      position: absolute;
+      right: 0;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      background-color: $blue3;
+      border-radius: 10px;
+      z-index: 999;
+      content: '';
+      color: transparent;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 10px;
+      vertical-align: middle;
+      margin: 5px 0 22px 0;
+      text-transform: uppercase;
+      transition: 240ms ease;
+
+      &.is-current-link{
+        background-color: $yellow;
+      }
+
+    }
+
+    .dot:hover {
+      background-color: $yellow;
+      color: black;
+    }
+
+    .dot span {
+      margin: 0px 0px 20px 5px;
+      position: relative;
+      top: 0px;
+      left: -130px;
+    }
+
+    nav {
+      width: 100px;
+      height: 200px;
+      padding: 0 0px;
+      position: fixed;
+      top: 30%;
+      right: 20px;
+      transform: translate(0, -20%);
+      z-index: 10000;
+      text-align: right;
+      transition: transform ease-in 250ms;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+  }

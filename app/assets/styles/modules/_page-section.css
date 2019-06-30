@@ -1,0 +1,36 @@
+.page-section {
+  padding-top: 1.5rem ;
+
+  @mixin atSmall{
+    padding-top: 2rem;
+  }
+
+  @mixin atMedium {
+    padding-top: 5.2rem;
+  }
+
+  @mixin atLarge {
+    padding: 4.5rem 0;
+  }
+
+  @mixin atExLarge {
+    padding-top: 10rem;
+  }
+
+  &--camera{
+    margin-top: 4.6875rem;
+
+    @mixin atSmall{
+      margin-top: 4.6875rem;
+    }
+
+    @mixin atLarge{
+      margin-top: 4.0625rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: 4.6875rem;
+      padding: 8.75rem;
+    }
+  }
+}

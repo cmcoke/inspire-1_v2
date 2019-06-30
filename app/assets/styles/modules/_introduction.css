@@ -1,0 +1,16 @@
+.introduction{
+  /* display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+
+  &__content{
+    @mixin atExLarge{
+      margin-top: 1.375rem;
+    }
+  }
+
+}

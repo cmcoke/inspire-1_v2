@@ -1,0 +1,50 @@
+.site-header{
+
+  @mixin atMobileMenu{
+    position: absolute;
+    z-index: 2;
+
+   &__menu-toggle{
+     display: block;
+     padding: 1em;
+     position: fixed;
+     right: -3px;
+     top:3px;
+     z-index: 3;
+     cursor: pointer;
+   }
+
+   &__menu-hamburger,  &__menu-hamburger::before,  &__menu-hamburger::after{
+     content: '';
+     display: block;
+     width: 2em;
+     height: 3px;
+     background: red;
+     transition: all ease-in-out 250ms;
+   }
+
+    &__menu-hamburger::before{
+      transform: translateY(-6px);
+    }
+
+    &__menu-hamburger::after{
+      transform: translateY(3px);
+    }
+
+    &__menu-hamburger.overlay--is-open{
+      transform: rotate(45deg);
+
+      &::after{
+        transform: rotate(-90deg) translateX(3px);
+      }
+
+      &::before{
+        opacity: 0;
+      }
+    }
+
+  }
+
+
+
+}

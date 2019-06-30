@@ -1,0 +1,21 @@
+.overlay{
+
+    @mixin atMobileMenu{
+      position: fixed;
+      width: 100%;
+      bottom:100%;
+      right: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.9);
+      overflow: hidden;
+      transition: all ease-in-out 250ms;
+
+      &--is-open{
+        bottom: 0;
+      }
+
+    }
+
+
+
+}

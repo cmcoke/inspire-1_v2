@@ -1,0 +1,39 @@
+.camera{
+  background-color: $blue;
+
+  &__img{
+    margin-top: -7.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atMedium{
+      margin-top: -11.25rem;
+    }
+
+    @mixin atLarge{
+      margin-top: -11.25rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: -17.5rem;
+    }
+
+    @mixin atExLarge2{
+        margin-left: 6.25rem;
+    }
+  }
+
+  &__specs{
+    color: #fff;
+    list-style-type: circle;
+    margin: 0 0.75rem 0 0;
+    padding: 0;
+
+    & li{
+      margin-bottom: 0.6975rem;
+      margin-left: 1.2rem;
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+.btn{
+
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  transition: 250ms ease;
+
+  &__container{
+    text-align: center;
+  }
+
+  &--buy-now{
+    background-color: #363636;
+    color: #fff;
+  }
+
+  &--buy-now:hover{
+    background-color: $blue;
+    color: #fff;
+  }
+
+  &--newsletter{
+    background-color: $blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+
+    &:hover{
+      background-color: $blue2;
+    }
+
+    @mixin atMedium{
+      width: 100%;
+    }
+
+  }
+
+}

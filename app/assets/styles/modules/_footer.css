@@ -1,0 +1,74 @@
+.footer{
+  background-color: #0C0C0C;
+  margin-top: 3.125rem;
+  text-align: center;
+
+  @mixin atExLarge{
+    padding-top: 4.375rem;
+  }
+
+  & ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  & ul li{
+    margin-bottom: 0.75rem;
+  }
+
+  & a{
+    color: #fff;
+    font-size: 0.875rem;
+    transition: 250ms ease;
+
+  }
+
+  & ul a:hover{
+    color: #ED3D3D;
+  }
+
+  &__form{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+
+    @mixin atMedium{
+      width: 100%;
+    }
+  }
+
+  & input[type = text]{
+    font-family: $mont;
+  }
+
+  ::-webkit-input-placeholder {
+  font-family: $mont;
+  font-size: 0.9375rem;
+  }
+
+  ::-moz-placeholder {
+    font-family: $mont;
+    font-size: 0.9375rem;
+  }
+
+  :-ms-input-placeholder {
+    font-family: $mont;
+    font-size: 0.9375rem;
+  }
+
+  ::placeholder {
+    font-family: $mont;
+    font-size: 0.9375rem;
+  }
+
+  &__creator{
+    color: #fff;
+    font-size: 0.75rem;
+  }
+
+  &__creator a:hover{
+    color: #ED3D3D;
+  }
+
+}

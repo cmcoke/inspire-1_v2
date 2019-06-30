@@ -1,0 +1,26 @@
+.buy{
+
+  &__img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3.75rem;
+
+    @mixin atSmall{
+      margin-top: -5rem;
+    }
+
+    @mixin atMedium{
+      margin-top: -9.0625rem;
+    }
+
+    @mixin atLarge{
+      margin-top: -8.125rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: -11.25rem;
+    }
+  }
+
+}

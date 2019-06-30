@@ -1,0 +1,63 @@
+.heading{
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &--introduction-small-heading{
+    margin-bottom: 0;
+  }
+
+  &--introduction-large-heading{
+    margin-top: 0.625rem;
+  }
+
+  &--design{
+    text-align: center;
+  }
+
+  &--camera{
+    color: #fff;
+  }
+
+  &--remote{
+    text-align: center;
+
+
+    @mixin atExLarge{
+      margin-top: -5rem;
+    }
+  }
+
+  &--remote-small{
+
+    @mixin atExLarge{
+      margin-top: 4.375rem;
+    }
+  }
+
+  &--app{
+    text-align: center;
+
+
+  }
+
+  &--buy{
+    text-align: center;
+
+    @mixin atMedium{
+      margin-top: -0.6875rem;
+    }
+
+    @mixin atLarge{
+      margin-top: -0.9375rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: -1.0625rem;
+    }
+  }
+
+  &--footer{
+    color: #fff;
+    font-size: 1.125rem;
+  }
+}

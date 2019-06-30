@@ -1,0 +1,30 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $mont;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  min-height: 300px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 600px;
+  }
+}
