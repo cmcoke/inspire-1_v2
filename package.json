@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": ">=3.4.0",
     "jquery-smooth-scroll": "2.2.0",
-    "lazysizes": "^4.0.0-rc3",
+    "lazysizes": "^5.2.2",
     "normalize.css": "7.0.0",
     "picturefill": "^3.0.2",
     "reflex-grid": "^2.0.2",
